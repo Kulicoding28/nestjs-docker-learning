@@ -12,10 +12,10 @@ services:
     networks:
       - gibahtech
   test-db:
-    container_name: dev.db
+    container_name: test.db
     image: postgres:13
     ports:
-      - 5433:5432
+      - 5437:5432
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123
